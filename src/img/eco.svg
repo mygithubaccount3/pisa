@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>eco</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="HOME" transform="translate(-823.000000, -1875.000000)">
+            <g id="eco" transform="translate(823.000000, 1875.000000)">
+                <rect id="Rectangle-Copy-29" fill="#00E193" fill-rule="nonzero" x="0" y="0" width="60" height="60"></rect>
+                <g id="tree-leaf" transform="translate(18.000000, 21.000000)" fill="#FFFFFF">
+                    <path d="M6.52619397,1.93059072 C1.64672276,4.77777751 1.92681171,9.41533615 2.09481402,11.1312483 C8.39719837,3.62365138 17.8242213,3.98773388 17.8242213,3.98773388 C17.8242213,3.98773388 4.46114436,8.59730593 0.536324548,17.840842 C0.226362848,18.5705476 1.99064238,19.5195242 2.3932862,18.6568182 C3.59508992,16.0861595 5.2697512,14.1581655 5.2697512,14.1581655 C7.74050851,15.0827502 12.0146097,16.1662679 15.044013,14.0225974 C19.067898,11.1748971 18.6565732,4.86225081 24.4008222,1.78860368 C25.7425428,1.07096574 13.1413486,-1.92976219 6.52619397,1.93059072 Z" id="Path"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

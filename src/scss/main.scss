@@ -1,0 +1,25 @@
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Bold.ttf") format('truetype');
+  font-weight: 700;
+}
+
+@import "utils/utilities/variables";
+@import "utils/mixins/mixins";
+@import "modules/navbar";
+@import "modules/header";
+@import "modules/about-us";
+@import "modules/hero";
+@import "modules/subscription";
+@import "modules/partners";
+@import "modules/contacts";
+@import "modules/footer";
+@import "modules/blog";
+
+* {
+  outline: none;
+}
+
+main {
+  margin-bottom: 35px;
+}

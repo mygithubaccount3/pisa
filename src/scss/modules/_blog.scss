@@ -1,0 +1,141 @@
+.blog {
+  margin-top: 58px;
+
+  @include respond-to(smallScreen) {
+    margin-top: 0;
+  }
+
+  &__title {
+    background-color: #013BD6;
+    color: #FFFFFF;
+    font-family: Gilroy, sans-serif;
+    font-size: rem(38);
+    font-weight: bold;
+    line-height: 46px;
+    margin: auto auto 80px;
+    text-align: center;
+    width: 10%;
+
+    @include respond-to(smallScreen) {
+      margin-bottom: 35px;
+      width: 28%;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    width: 90%;
+
+    @include respond-to(smallScreen) {
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    background-image: url("https://via.placeholder.com/150x300");
+    width: 99.3%;
+    height: 300px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+
+    @include respond-to(smallScreen) {
+      height: auto;
+      margin-bottom: 15px;
+      padding-top: 47px;
+      padding-bottom: 19px;
+    }
+
+    &:nth-child(7), &:nth-child(9) {
+      background-image: unset;
+      background-color: white;
+      justify-content: center;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+
+    &:nth-child(7) > .blog__item-title, &:nth-child(9) > .blog__item-title {
+      background-color: unset;
+      color: #000D46;
+
+      @include respond-to(smallScreen) {
+        line-height: 34px;
+        margin-top: 25px;
+        width: 100%;
+      }
+    }
+
+    &:nth-child(odd) {
+      margin-right: 0;
+    }
+
+    &--w32 {
+      width: 32%;
+
+      @include respond-to(smallScreen) {
+        width: 99.3%;
+      }
+    }
+
+    &--w66 {
+      width: 66%;
+
+      @include respond-to(smallScreen) {
+        width: 99.3%;
+      }
+    }
+
+    &-title {
+      line-height: 0.7;
+
+      & > span {
+        background-color: #013BD6;
+        color: #FFFFFF;
+        font-family: Gilroy, sans-serif;
+        font-size: rem(24);
+        font-weight: bold;
+        line-height: 1;
+        width: 65%;
+      }
+    }
+
+    &-description {
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 90%;
+
+      @include respond-to(smallScreen) {
+        overflow: visible;
+        white-space: normal;
+        margin-top: 11px;
+      }
+    }
+
+    &-link {
+      color: #000D46;
+      font-family: Gilroy, sans-serif;
+      font-size: rem(16);
+      font-weight: 600;
+      line-height: 24px;
+      text-align: center;
+      width: 40%;
+
+      &::after {
+        content: ' Детальніше';
+      }
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}

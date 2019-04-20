@@ -1,0 +1,153 @@
+.header {
+  padding-bottom: 55px;
+
+  @include respond-to(smallScreen) {
+    padding-bottom: 32px;
+  }
+
+  &__title {
+    display: inline-block;
+    margin-left: 63px;
+    width: 65%;
+
+    @include respond-to(smallScreen) {
+      margin-top: 53px;
+      margin-left: 0;
+      order: 1;
+    }
+
+    &-wrapper {
+      display: flex;
+      padding-top: 260px;
+      padding-bottom: 245px;
+
+      @include respond-to(smallScreen) {
+        flex-direction: column;
+        margin: auto;
+        padding-top: 32px;
+        padding-bottom: 41px;
+        width: 90%;
+      }
+
+      & img {
+        transform: rotate(-60deg);
+        width: 25%;
+      }
+    }
+
+    @include respond-to(smallScreen) {
+      width: 100%;
+    }
+
+    & span {
+      background-color: #013BD6;
+      color: #FFFFFF;
+      font-family: Gilroy, sans-serif;
+      font-size: rem(38);
+      font-weight: bold;
+      line-height: 1.5;
+      padding: 8px;
+
+    }
+  }
+
+  &__arrow {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+    background-color: #013BD6;
+    box-shadow: 0 24px 19px -10px rgba(1,59,214,0.3);
+    margin-left: 82px;
+    padding: 19px 22px;
+
+    &::after {
+      content: '\f063';
+      color: white;
+      font-family: FontAwesome;
+    }
+
+    &-title {
+      color: #000D46;
+      font-family: Gilroy, sans-serif;
+      font-size: rem(16);
+      font-weight: bold;
+      line-height: 22px;
+    }
+  }
+}
+
+.circle {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%;
+  position: fixed;
+  width: 2vw;
+  height: 2vw;
+  z-index: 4;
+  opacity: .75;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  border: 1px solid #809DEA;
+
+  @include respond-to(smallScreen) {
+    border: none;
+  }
+}
+
+.btn:hover {
+  box-shadow: 0 29px 24px -10px rgba(1,59,214,0.2);
+}
+
+.navbar-light .navbar-nav .nav-link, .nav-item > .dropdown-menu > .dropdown-item {
+  color: #000D46;
+  font-family: Gilroy, sans-serif;
+  font-size: rem(16);
+  font-weight: bold;
+  line-height: 22px;
+}
+
+.nav-item > .dropdown-menu > .dropdown-item {
+  @include respond-to(smallScreen) {
+    line-height: 0.5;
+    text-align: center;
+  }
+
+  &:hover {
+    background-color: #EAEFFC;
+  }
+}
+
+#bigYellowCircle {
+  background-image: url("https://www.kirupa.com/images/yellow_circle.svg");
+  background-position: center center;
+  top: 50%;
+  left: 30%;
+  z-index: 4;
+}
+
+#blueSquare {
+  background-image: url("https://www.kirupa.com/images/blue_square.svg");
+  background-position: 97% bottom;
+  top: 100%;
+  right: 0;
+  z-index: 5;
+}
+
+#greenPentagon {
+  background-image: url("https://www.kirupa.com/images/green_pentagon.svg");
+  background-position: 5% top;
+  top: 0;
+  z-index: 6;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .header__title-wrapper > img {
+    width: 17%;
+  }
+}

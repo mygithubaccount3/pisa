@@ -1,0 +1,124 @@
+.hero {
+  padding-top: 80px;
+  padding-bottom: 102px;
+
+  &__scheme {
+    align-items: center;
+    background-color: #F1F5FF;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding-top: 51px;
+    padding-bottom: 59px;
+    width: 90%;
+
+    @include respond-to(smallScreen) {
+      transform: rotate(90deg);
+      height: 271px;
+      width: 410px;
+      margin-top: 80px;
+      align-items: normal;
+      padding-right: 27px;
+    }
+
+    & > p {
+      margin-right: 50px;
+
+      @include respond-to(smallScreen) {
+        transform: rotate(-90deg);
+        margin-right: 0;
+        margin-left: 24px;
+        width: 25%;
+      }
+
+      &::after {
+        content: ' 3 види грамотності:';
+        background-color: #013BD6;
+        color: white;
+      }
+    }
+
+    &-wrapper {
+      position: relative;
+
+      & > div {
+        position: absolute;
+
+        &:first-of-type {
+          right: -33px;
+          top: -29px;
+
+          @include respond-to(smallScreen) {
+            display: flex;
+            flex-direction: column;
+            right: 58px;
+            top: -40px;
+            transform: rotate(-90deg);
+          }
+        }
+
+        &:nth-of-type(2) {
+          right: -160px;
+          bottom: 76px;
+
+          @include respond-to(smallScreen) {
+            display: flex;
+            flex-direction: column;
+            right: -34px;
+            bottom: 41px;
+            transform: rotate(-90deg);
+          }
+        }
+
+        &:nth-of-type(3) {
+          right: -95px;
+          top: 166px;
+
+          @include respond-to(smallScreen) {
+            display: flex;
+            flex-direction: column;
+            right: 78px;
+            top: 103px;
+            transform: rotate(-90deg);
+            width: 20%;
+
+            & > span {
+              width: 182%;
+            }
+          }
+        }
+
+        & > span {
+          background-color: #013BD6;
+          color: white;
+        }
+      }
+
+      @include respond-to(smallScreen) {
+        & > img {
+          width: 80%;
+        }
+      }
+    }
+  }
+
+  &__description {
+    background-color: #013BD6;
+    color: white;
+    margin: 116px auto 92px;
+    text-align: center;
+    width: 46%;
+
+    @include respond-to(smallScreen) {
+      margin-bottom: 0;
+      width: 72%;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .hero__scheme {
+    justify-content: initial;
+    width: 96%;
+  }
+}

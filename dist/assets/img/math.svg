@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>math</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="HOME" transform="translate(-949.000000, -1775.000000)">
+            <g id="math" transform="translate(942.000000, 1767.000000)">
+                <rect id="Rectangle-Copy-24" fill="#013BD6" fill-rule="nonzero" x="7" y="8" width="60" height="60"></rect>
+                <rect id="Rectangle" fill="#FFFFFF" fill-rule="nonzero" opacity="0.2" x="7" y="8" width="30" height="30"></rect>
+                <rect id="Rectangle-Copy-3" fill="#FFFFFF" fill-rule="nonzero" opacity="0.2" x="37" y="38" width="30" height="30"></rect>
+                <text id="+" font-family="Gilroy-SemiBold, Gilroy" font-size="36" font-weight="500" fill="#FFFFFF">
+                    <tspan x="13" y="35">+</tspan>
+                </text>
+                <text id="+-copy" transform="translate(23.000000, 53.500000) rotate(-45.000000) translate(-23.000000, -53.500000) " font-family="Gilroy-SemiBold, Gilroy" font-size="36" font-weight="500" fill="#FFFFFF">
+                    <tspan x="13" y="66">+</tspan>
+                </text>
+                <text id="-" font-family="Gilroy-SemiBold, Gilroy" font-size="36" font-weight="500" fill="#FFFFFF">
+                    <tspan x="43" y="34">-</tspan>
+                </text>
+                <text id="=" font-family="Gilroy-SemiBold, Gilroy" font-size="36" font-weight="500" fill="#FFFFFF">
+                    <tspan x="43" y="65">=</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

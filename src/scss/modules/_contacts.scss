@@ -1,0 +1,97 @@
+.contacts {
+  background-color: #F1F5FF;
+  margin: auto;
+  padding-top: 45px;
+  padding-bottom: 86px;
+  width: 90%;
+
+  @include respond-to(smallScreen) {
+    padding-top: 33px;
+    padding-bottom: 36px;
+  }
+
+  &__title {
+    color: #000D46;
+    font-family: "Gilroy", sans-serif;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 46px;
+    margin-bottom: 78px;
+    text-align: center;
+
+    @include respond-to(smallScreen) {
+      margin-bottom: 34px;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    width: 90%;
+
+    @include respond-to(smallScreen) {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    & > form > .form-group > input {
+      background-color: transparent;
+      border: 1px solid #013BD6;
+      color: #000D46;
+
+      &::placeholder {
+        color: #013BD6;
+      }
+    }
+  }
+
+  &__address {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+
+    @include respond-to(smallScreen) {
+      margin-bottom: 41px;
+      width: 100%;
+    }
+
+    & > span {
+      color: #000D46;
+      font-family: Gilroy, sans-serif;
+      font-size: rem(16);
+      font-weight: 600;
+      line-height: 24px;
+    }
+  }
+
+  & form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 50%;
+
+    @include respond-to(smallScreen) {
+      width: 100%;
+    }
+  }
+}
+
+.form-group {
+  width: 100%;
+
+  &:first-child, &:nth-child(2) {
+    width: 49%;
+
+    @include respond-to(smallScreen) {
+      width: 100%;
+    }
+  }
+}
+
+@include respond-to(smallScreen) {
+  .btn {
+    margin-top: 7px;
+    width: 100%;
+  }
+}

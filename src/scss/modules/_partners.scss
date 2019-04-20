@@ -1,0 +1,78 @@
+.partners {
+  margin-bottom: 77px;
+  padding-top: 60px;
+
+  &__title {
+    color: #000D46;
+    font-family: Gilroy, sans-serif;
+    font-size: rem(38);
+    font-weight: bold;
+    line-height: 46px;
+    padding-bottom: 60px;
+    text-align: center;
+  }
+
+  &__slider {
+    margin: auto;
+    width: 80%;
+
+    & img {
+      width: 80%;
+    }
+  }
+
+  &__center {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 70px auto auto;
+
+    @include respond-to(smallScreen) {
+      flex-direction: column;
+    }
+
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+      padding-top: 15px;
+
+      & > span {
+        color: #6D6E70;
+        font-family: Gilroy, sans-serif;
+        font-size: rem(16);
+        font-weight: bold;
+        line-height: 26px;
+
+        &::first-letter {
+          color: #F00B49;
+        }
+
+        & > span {
+          color: #F00B49;
+        }
+      }
+
+      &:first-child {
+        padding-top: 0;
+      }
+
+      & > img {
+        width: 60%;
+        height: auto;
+        margin: auto;
+      }
+    }
+  }
+}
+
+.slick-slide {
+  margin: 0 10px;
+}
+
+.slick-list {
+  margin: 0 -10px;
+}
+
+.slick-dots li button:before {
+  color: #D6D6D6;
+}

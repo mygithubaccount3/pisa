@@ -1,0 +1,58 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin: auto auto 41px;
+  width: 95%;
+
+  @include respond-to(smallScreen) {
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 26px;
+  }
+
+  &__logo, &__nav > a, &__madeby {
+    color: #000D46;
+    font-family: Gilroy, sans-serif;
+    font-size: rem(14);
+    font-weight: 500;
+    line-height: 16px;
+  }
+
+  &__logo {
+    @include respond-to(smallScreen) {
+      order: 1;
+    }
+
+    & span::after {
+      content: '\f1f9';
+      font-family: FontAwesome;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+
+    @include respond-to(smallScreen) {
+      align-items: center;
+      flex-direction: column;
+      margin-bottom: 45px;
+      order: 0;
+      width: 100%;
+    }
+
+    @include respond-to(smallScreen) {
+      & > a {
+        line-height: 40px;
+      }
+    }
+
+  }
+
+  @include respond-to(smallScreen) {
+    &__madeby {
+      order: 3;
+    }
+  }
+}

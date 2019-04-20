@@ -1,0 +1,100 @@
+.about-us {
+  background-color: #013BD6;
+  padding-top: 72px;
+
+  @include respond-to(smallScreen) {
+    padding-top: 41px;
+  }
+
+  &__title {
+    color: #FFFFFF;
+    font-family: Gilroy, sans-serif;
+    font-size: rem(38);
+    font-weight: bold;
+    line-height: 46px;
+    margin-bottom: 54px;
+    text-align: center;
+
+    @include respond-to(smallScreen) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__info {
+    justify-content: space-between;
+    margin: auto auto 60px;
+    width: 90%;
+
+    @include respond-to(smallScreen) {
+      flex-direction: column;
+    }
+
+    & > div {
+      color: #FFC300;
+      font-family: Gilroy, sans-serif;
+      font-size: rem(52);
+      font-weight: bold;
+      line-height: 63px;
+      text-align: center;
+      width: 20%;
+
+      @include respond-to(smallScreen) {
+        margin: 41px auto auto;
+        width: 70%;
+      }
+
+      &:first-child::after, &:nth-child(2)::after, &:nth-child(3)::after, &:nth-child(4)::after {
+        color: #FFFFFF;
+        display: block;
+        font-family: Gilroy, sans-serif;
+        font-size: rem(16);
+        font-weight: 600;
+        line-height: 20px;
+        text-align: center;
+      }
+
+      &:first-child::after {
+        content: 'проведено перше дослідження ';
+      }
+
+      &:nth-child(2)::after {
+        content: 'країн у світі беруть участь';
+      }
+
+      &:nth-child(3)::after {
+        content: 'світової економіки представляють усі країни-учасниці';
+      }
+
+      &:nth-child(4)::after {
+        content: 'вік школярів-учасників PISA';
+      }
+    }
+  }
+
+  &__more {
+    border-bottom: 2px solid #00ADFF;
+    color: #FFFFFF;
+    font-family: Gilroy, sans-serif;
+    font-size: rem(16);
+    font-weight: 600;
+    line-height: 19px;
+    margin: 0 auto 70px;
+    width: 23%;
+
+    @include respond-to(smallScreen) {
+      width: 76%;
+    }
+
+    &::before {
+      content: '\f061';
+      font-family: FontAwesome;
+      font-size: rem(13);
+      padding-right: 5px;
+    }
+
+    &:hover {
+      color: white;
+      text-decoration: none;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="285px" height="202px" viewBox="0 0 285 202" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>path</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="HOME" transform="translate(-667.000000, -1706.000000)" fill-rule="nonzero">
+            <g id="path" transform="translate(667.000000, 1706.000000)">
+                <path d="M5,97.43245 C107.646321,97.43245 123.786783,3 186.149524,3" id="Path-2" stroke="#000D46"></path>
+                <circle id="Oval-Copy-11" fill="#000D46" cx="186" cy="3" r="3"></circle>
+                <circle id="Oval-Copy-12" fill="#000D46" cx="282" cy="98" r="3"></circle>
+                <circle id="Oval-Copy-13" fill="#000D46" cx="156" cy="199" r="3"></circle>
+                <path d="M5,97 C107.646321,97 93.5998956,198.426065 155.962637,198.426065" id="Path-2-Copy" stroke="#000D46"></path>
+                <path d="M4,97.5 L282.59444,97.5" id="Path-3" stroke="#000D46"></path>
+                <circle id="Oval" fill="#013BD6" cx="6.5" cy="96.5" r="6.5"></circle>
+            </g>
+        </g>
+    </g>
+</svg>
