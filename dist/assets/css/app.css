@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @font-face {
   font-family: "Gilroy";
-  src: url("/pisa/dist/assets/fonts/Gilroy-Bold.ttf") format("truetype");
+  src: url("/assets/fonts/Gilroy-Bold.ttf") format("truetype");
   font-weight: 700; }
 
 .navbar {
@@ -47,23 +47,6 @@
 
 .dropdown-toggle::after {
   display: none; }
-
-.circles {
-  position: relative;
-  -webkit-transform: translateY(20px);
-      -ms-transform: translateY(20px);
-          transform: translateY(20px); }
-  .circles > div {
-    border-radius: 20px;
-    height: 23px;
-    width: 23px; }
-    .circles > div:first-child {
-      background-color: #013BD6;
-      position: absolute;
-      top: 5px;
-      right: 10px; }
-    .circles > div:last-child {
-      background-color: #00ADFF; }
 
 .header {
   padding-bottom: 55px; }

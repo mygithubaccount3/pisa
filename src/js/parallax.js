@@ -15,9 +15,9 @@ function scrollLoop() {
     xScrollPosition = window.scrollX;
     yScrollPosition = window.scrollY;
 
-    setTranslate(0, yScrollPosition * -0.2, bigYellowCircle);
-    setTranslate(0, yScrollPosition * -1.5, blueSquare);
-    setTranslate(0, yScrollPosition * .5, greenPentagon);
+    setTranslate(0, yScrollPosition * 0.1, bigYellowCircle);
+    setTranslate(0, yScrollPosition * 0.1, blueSquare);
+    setTranslate(0, yScrollPosition * 0.1, greenPentagon);
 
     requestAnimationFrame(scrollLoop);
 }

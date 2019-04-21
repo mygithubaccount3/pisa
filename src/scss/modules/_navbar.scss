@@ -59,25 +59,3 @@
 .dropdown-toggle::after {
   display: none;
 }
-
-.circles {
-  position: relative;
-  transform: translateY(20px);
-
-  & > div {
-    border-radius: 20px;
-    height: 23px;
-    width: 23px;
-
-    &:first-child {
-      background-color: #013BD6;
-      position: absolute;
-      top: 5px;
-      right: 10px;
-    }
-
-    &:last-child {
-      background-color: #00ADFF;
-    }
-  }
-}
