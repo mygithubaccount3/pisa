@@ -15,7 +15,8 @@
     @include respond-to(smallScreen) {
       transform: rotate(90deg);
       height: 271px;
-      width: 410px;
+      width: 100%;
+      max-width: 390px;
       margin-top: 80px;
       align-items: normal;
       padding-right: 27px;

@@ -345,7 +345,8 @@
             -ms-transform: rotate(90deg);
                 transform: rotate(90deg);
         height: 271px;
-        width: 410px;
+        width: 100%;
+        max-width: 390px;
         margin-top: 80px;
         -webkit-box-align: normal;
             -ms-flex-align: normal;
