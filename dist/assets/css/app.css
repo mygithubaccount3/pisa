@@ -84,7 +84,7 @@
         -webkit-transform: rotate(-60deg);
             -ms-transform: rotate(-60deg);
                 transform: rotate(-60deg);
-        width: 25%; }
+        width: 20%; }
     @media (max-width: 767px) {
       .header__title {
         width: 100%; } }
