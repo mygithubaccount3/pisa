@@ -35,14 +35,17 @@
   }
 
   &-nav {
-    margin-right: 37px;
-
     @include respond-to(smallScreen) {
       & li {
         text-align: center;
         width: 70%;
         margin: auto;
       }
+    }
+
+    @media screen and (max-width: 991px){
+      width: 245px;
+      margin: auto;
     }
   }
 }
@@ -58,4 +61,58 @@
 
 .dropdown-toggle::after {
   display: none;
+}
+
+.icon-bar {
+  width: 22px;
+  height: 2px;
+  background-color: rgba(0.09, 0, 0.29, 1);
+  display: block;
+  transition: all 0.2s;
+  margin-top: 4px
+}
+
+.navbar-toggler {
+  border: none;
+  background: transparent !important;
+  position: relative;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+}
+
+.navbar-toggler .top-bar {
+  transform: translateX(0) rotate(45deg);
+}
+
+.navbar-toggler .bottom-bar {
+  transform: translateX(0) translateY(-5px) rotate(-45deg);
+}
+
+.navbar-toggler.collapsed .top-bar {
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+  width: 23px;
+  transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+  width: 15px;
+  transform: rotate(0);
+}
+
+.nav-link {
+  text-align: center;
+}
+
+.form-inline > .btn {
+  margin: auto;
+
+  @media screen and (max-width: 991px) {
+    width: 210px;
+  }
 }
