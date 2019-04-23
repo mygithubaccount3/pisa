@@ -90,10 +90,43 @@
 
 .dropdown:hover .dropdown-menu {
   display: block;
+
+  &::before, &::after {
+    width: 0;
+    height: 0;
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 100%;
+    left: 1em;
+
+    @media screen and (max-width: 991px){
+      bottom: 84%;
+      left: 14em;
+    }
+  }
+
+  &::before {
+    border-bottom: 9px solid #7f9dea;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    margin-top: -3px;
+    margin-left: -2px;
+    z-index: -100;
+  }
+
+  &::after {
+    border-bottom: 7px solid white;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    z-index: 1;
+    margin-top: 1px;
+  }
 }
 
 .dropdown-menu {
   border: 1px solid #809DEA;
+  position: relative;
 
   @include respond-to(smallScreen) {
     border: none;
