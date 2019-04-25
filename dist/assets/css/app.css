@@ -294,7 +294,7 @@
     right: 630px; }
 
 .greenSemicircle {
-  background-image: url("/assets/img/semicircle.svg");
+  background-image: url("/pisa/dist/assets/img/semicircle.svg");
   background-position: 5% top;
   background-size: contain;
   top: 0;
