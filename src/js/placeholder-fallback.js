@@ -259,6 +259,6 @@
             return document.activeElement;
         } catch (exception) {}
     }
-}));
 
-jQuery('input').placeholder();
+    $('input').placeholder();
+}));
