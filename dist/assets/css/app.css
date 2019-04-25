@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @font-face {
   font-family: "Gilroy";
-  src: url("/assets/fonts/Gilroy-Bold.ttf") format("truetype");
+  src: url("/pisa/dist/assets/fonts/Gilroy-Bold.ttf") format("truetype");
   font-weight: 700; }
 
 .navbar {
