@@ -260,3 +260,5 @@
         } catch (exception) {}
     }
 }));
+
+jQuery('input').placeholder();
