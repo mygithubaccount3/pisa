@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "NODE_ENV=development webpack-dev-server --open --config ./build/webpack.dev.conf.js",
-    "build": "NODE_ENV=production webpack --config ./build/webpack.build.conf.js"
+    "build": "NODE_ENV=production webpack -p --config ./build/webpack.build.conf.js"
   },
   "browserslist": [
     "> 1%",

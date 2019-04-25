@@ -1,5 +1,6 @@
 import './scss/main.scss'
 import './css/underline.css'
 import './js/slider'
+import './js/placeholder-fallback'
 import './js/parallax'
 import './js/smooth'
