@@ -1,5 +1,5 @@
 import './scss/main.scss'
 import './css/underline.css'
-import './js/smooth'
 import './js/slider'
 import './js/parallax'
+import './js/smooth'
