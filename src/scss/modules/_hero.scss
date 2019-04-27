@@ -28,8 +28,8 @@
       @include respond-to(smallScreen) {
         transform: rotate(-90deg);
         margin-right: 0;
-        margin-left: 24px;
-        width: 25%;
+        text-align: center;
+        width: 30%;
       }
 
       &::after {
@@ -43,6 +43,10 @@
       position: relative;
 
       & > div {
+        @include respond-to(smallScreen) {
+          align-items: center;
+        }
+
         position: absolute;
 
         &:first-of-type {
@@ -52,8 +56,8 @@
           @include respond-to(smallScreen) {
             display: flex;
             flex-direction: column;
-            right: 58px;
-            top: -40px;
+            right: 56px;
+            top: -35px;
             transform: rotate(-90deg);
           }
         }
@@ -65,8 +69,8 @@
           @include respond-to(smallScreen) {
             display: flex;
             flex-direction: column;
-            right: -34px;
-            bottom: 41px;
+            right: -31px;
+            bottom: 40px;
             transform: rotate(-90deg);
           }
         }
@@ -78,13 +82,13 @@
           @include respond-to(smallScreen) {
             display: flex;
             flex-direction: column;
-            right: 78px;
-            top: 103px;
+            right: 85px;
+            top: 111px;
             transform: rotate(-90deg);
             width: 20%;
 
             & > span {
-              width: 182%;
+              width: 300%;
             }
           }
         }
@@ -92,6 +96,12 @@
         & > span {
           background-color: #013BD6;
           color: white;
+        }
+
+        @include respond-to(smallScreen) {
+          & > img {
+            width: 50px;
+          }
         }
       }
 

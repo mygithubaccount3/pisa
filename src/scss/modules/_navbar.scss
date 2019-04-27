@@ -14,11 +14,7 @@
   }
 
   &-brand {
-    width: 6%;
-
-    @include respond-to(smallScreen) {
-      width: 30%;
-    }
+    width: 100px;
 
     & > img {
       height: auto;
@@ -98,7 +94,7 @@
 
 .navbar-toggler.collapsed .bottom-bar {
   position: absolute;
-  bottom: 0px;
+  bottom: 0;
   right: 0;
   width: 15px;
   transform: rotate(0);

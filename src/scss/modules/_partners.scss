@@ -57,9 +57,10 @@
       }
 
       & > img {
-        width: 60%;
-        height: auto;
-        margin: auto;
+        @include respond-to(smallScreen) {
+          width: 300px;
+          margin: auto;
+        }
       }
     }
   }
