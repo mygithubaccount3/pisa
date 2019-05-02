@@ -22,19 +22,44 @@
   }
 
   &__center {
-    width: 80%;
+    width: 90%;
     display: flex;
     justify-content: space-between;
     margin: 70px auto auto;
 
     @include respond-to(smallScreen) {
       flex-direction: column;
+      width: 85%;
     }
 
     &-wrapper {
       display: flex;
       flex-direction: column;
       padding-top: 15px;
+      flex-wrap: wrap;
+      height: 118px;
+
+      @include respond-to(smallScreen) {
+        align-items: center;
+        height: 156px;
+        width: 100%;
+      }
+
+      &:first-child {
+        width: 35%;
+
+        @include respond-to(smallScreen) {
+          width: 100%;
+        }
+      }
+
+      &:last-child {
+        width: 65%;
+
+        @include respond-to(smallScreen) {
+          width: 100%;
+        }
+      }
 
       & > span {
         color: #6D6E70;
@@ -42,6 +67,12 @@
         font-size: rem(16);
         font-weight: bold;
         line-height: 26px;
+
+        @include respond-to(smallScreen) {
+          &:nth-child(4) {
+            margin-right: 10px;
+          }
+        }
 
         &::first-letter {
           color: #F00B49;
@@ -57,8 +88,9 @@
       }
 
       & > img {
+        width: 221px;
+
         @include respond-to(smallScreen) {
-          width: 300px;
           margin: auto;
         }
       }

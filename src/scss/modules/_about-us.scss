@@ -72,24 +72,22 @@
   }
 
   &__more {
-    border-bottom: 2px solid #00ADFF;
     color: #FFFFFF;
     font-family: Gilroy, sans-serif;
     font-size: rem(16);
     font-weight: 600;
     line-height: 19px;
     margin: 0 auto 70px;
-    width: 23%;
-
-    @include respond-to(smallScreen) {
-      width: 76%;
-    }
+    position: relative;
+    width: 266px;
 
     &::before {
       content: '\f061';
       font-family: FontAwesome;
       font-size: rem(13);
       padding-right: 5px;
+      position: absolute;
+      left: -20px;
     }
 
     &:hover {
